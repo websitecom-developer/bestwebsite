@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<title>Revival Junior Academy | Mugango</title>
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial;color:#111;line-height:1.6}
+:root{--gold:#c9a227;--black:#111}
+header{background:#fff;border-bottom:2px solid var(--gold);position:sticky;top:0;z-index:10}
+.nav{max-width:1100px;margin:auto;padding:15px;display:flex;justify-content:space-between;align-items:center}
+.logo{font-family:Georgia;font-size:20px}
+.logo span{display:block;color:var(--gold);font:11px Arial;letter-spacing:1px}
+nav{display:flex;gap:15px}
+nav a{color:#111;text-decoration:none;font-weight:bold;font-size:14px}
+.menu{display:none;font-size:25px}
+.hero{max-width:1100px;margin:auto;padding:50px 15px;display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center}
+.hero small,.title small{color:var(--gold);font-weight:bold;letter-spacing:2px}
+.hero h1{font:42px Georgia;margin:15px 0}
+.hero h1 span{color:var(--gold)}
+.hero p{color:#555;margin-bottom:20px}
+.btn{display:inline-block;background:var(--black);color:#fff;padding:12px 22px;text-decoration:none;border-left:4px solid var(--gold);margin:5px}
+.hero-img{width:100%;height:400px;object-fit:cover;border:2px solid #eee}
+section{padding:60px 15px}
+.light{background:#f7f7f7}
+.container{max-width:1050px;margin:auto}
+.title{text-align:center;margin-bottom:35px}
+.title h2{font:32px Georgia;margin-top:8px}
+.line{width:55px;height:3px;background:var(--gold);margin:12px auto}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.card{background:#fff;padding:25px;border:1px solid #ddd;border-top:3px solid var(--gold)}
+.card h3{font:20px Georgia;margin-bottom:10px}
+.academics{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.academic{padding:25px;text-align:center;border:1px solid #ddd}
+.academic h3{margin:10px 0}
+.admission{background:#111;color:#fff;padding:40px;text-align:center;border-left:5px solid var(--gold)}
+.admission h2{color:var(--gold);font:28px Georgia;margin-bottom:12px}
+footer{background:#111;color:#ccc;text-align:center;padding:30px}
+footer h2{color:var(--gold);font-family:Georgia}
+.map{height:300px;border:3px solid var(--gold);margin-top:20px}
+.map iframe{width:100%;height:100%;border:0}
+.whatsapp{position:fixed;right:20px;bottom:20px;background:#25d366;color:#fff;width:55px;height:55px;border-radius:50%;display:flex;align-items:center;justify-content:center;text-decoration:none;font-size:25px}
+@media(max-width:800px){
+nav{display:none;position:absolute;top:70px;left:0;width:100%;background:#fff;flex-direction:column;padding:20px}
+nav.active{display:flex}
+.menu{display:block}
+.hero{grid-template-columns:1fr}
+.hero h1{font-size:34px}
+.hero-img{height:300px}
+.grid,.academics{grid-template-columns:1fr}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="nav">
+<div class="logo">
+Revival Junior Academy
+<span>MUGANGO • BOMET</span>
+</div>
+
+<div class="menu" onclick="toggleMenu()">☰</div>
+
+<nav id="nav">
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#academics">Academics</a>
+<a href="#admissions">Admissions</a>
+<a href="#payments">Payments</a>
+<a href="#contact">Contact</a>
+</nav>
+</div>
+</header>
+
+<section id="home">
+<div class="hero">
+
+<div>
+<small>WELCOME TO REVIVAL JUNIOR ACADEMY</small>
+
+<h1>
+Nurturing <span>Quality Education</span> for Tomorrow
+</h1>
+
+<p>
+A learning environment where children are guided,
+supported and inspired to develop academically,
+socially and personally.
+</p>
+
+<a href="#admissions" class="btn">Admissions</a>
+<a href="#contact" class="btn">Contact Us</a>
+</div>
+
+<!-- ONLY ONE IMAGE -->
+<div>
+<img src="images/revival2.jpg"
+alt="Revival Junior Academy"
+class="hero-img">
+</div>
+
+</div>
+</section>
+
+<section id="about" class="light">
+<div class="container">
+
+<div class="title">
+<small>ABOUT OUR SCHOOL</small>
+<h2>Revival Junior Academy</h2>
+<div class="line"></div>
+</div>
+
+<div class="grid">
+
+<div class="card">
+<h3>Our Vision</h3>
+<p>To Achieve the Highest level of Education.</p>
+</div>
+
+<div class="card">
+<h3>Our Motto</h3>
+<p><strong>“Where Quality is Nurtured.”</strong></p>
+</div>
+
+<div class="card">
+<h3>Our Location</h3>
+<p>
+Mugango, near Repentance and Holliness Church,
+Bomet County, Kenya.
+</p>
+</div>
+
+<div class="card">
+<h3>Our Commitment</h3>
+<p>
+We provide a supportive learning environment
+that encourages pupils to grow in knowledge,
+character and confidence.
+</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<section id="academics">
+<div class="container">
+
+<div class="title">
+<small>LEARNING</small>
+<h2>Academics & Development</h2>
+<div class="line"></div>
+</div>
+
+<div class="academics">
+
+<div class="academic">
+<div></div>
+<h3>Quality Learning</h3>
+<p>
+Building strong academic foundations.
+</p>
+</div>
+
+<div class="academic">
+<div></div>
+<h3>Talent Development</h3>
+<p>
+Supporting creativity and individual abilities.
+</p>
+</div>
+
+<div class="academic">
+<div></div>
+<h3>Co-Curricular</h3>
+<p>
+Promoting teamwork and healthy development.
+</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<section id="admissions">
+<div class="container">
+
+<div class="admission">
+<h2>Admissions Are Welcome</h2>
+
+<p>
+Parents and guardians interested in Revival
+Junior Academy are encouraged to contact
+the school for admission information.
+</p>
+
+<br>
+
+<a href="https://wa.me/254791807559"
+target="_blank" class="btn">
+WhatsApp Us
+</a>
+
+</div>
+</div>
+</section>
+
+<section id="payments">
+<div class="container">
+
+<div class="title">
+<small>SCHOOL PAYMENTS</small>
+<h2>Payment Information</h2>
+<div class="line"></div>
+</div>
+
+<div class="grid">
+
+<div class="card">
+<h3>Bank Deposit</h3>
+<p>
+<strong>Bank / Sacco:</strong><br>
+Tenhos Sacco
+</p>
+<br>
+<p>
+<strong>Account Number:</strong><br>
+567614-0128
+</p>
+</div>
+
+<div class="card">
+<h3>M-Pesa</h3>
+<p>
+<strong>Phone:</strong><br>
+0791807559
+</p>
+<br>
+<p>
+<strong>Name:</strong><br>
+Nelson Rono
+</p>
+</div>
+
+</div>
+
+<p style="text-align:center;color:#777;margin-top:20px;font-size:13px">
+
+</p>
+
+</div>
+</section>
+
+<section id="contact" class="light">
+<div class="container">
+
+<div class="title">
+<small>GET IN TOUCH</small>
+<h2>Contact Revival Junior Academy</h2>
+<div class="line"></div>
+</div>
+
+<div class="grid">
+
+<div class="card">
+
+<h3>Contact Details</h3>
+
+<p>
+<strong> Address</strong><br>
+P.O. Box 88-20400, Bomet<br>
+Mugango, near Repentance and Holliness Church <br>
+Bomet County, Kenya
+</p>
+
+<br>
+
+<p style="font-family: Georgia, serif; color: #d4af37; line-height: 1.8;">
+    <strong style="font-size: 18px;">☎ PHONE</strong><br>
+    <a href="tel:0703212104" style="color: #fff; text-decoration: none;">
+        0703 212 104
+    </a><br>
+    <a href="tel:0791807559" style="color: #fff; text-decoration: none;">
+        0791 807 559
+    </a>
+</p>
+
+<br>
+
+<p style="font-family: Georgia, serif; color: #d4af37; line-height: 1.8;">
+    <strong style="font-size: 18px;">💬 WHATSAPP</strong><br>
+    <a href="https://wa.me/254791807559"
+       style="color: #fff; text-decoration: none; font-size: 16px;">
+        0791 807 559
+    </a>
+</p>
+
+</div>
+
+<div class="card">
+<h3>Find Us</h3>
+<p>Mugango, Bomet County, Kenya</p>
+
+<div class="map">
+<iframe
+src="https://www.google.com/maps?q=Mugango%2C%20Bomet%20County%2C%20Kenya&output=embed"
+loading="lazy"
+allowfullscreen>
+</iframe>
+</div>
+
+</div>
+
+</div>
+</div>
+</section>
+
+<footer>
+<h2>Revival Junior Academy</h2>
+<p>“Where Quality is Nurtured.”</p>
+<p>Mugango, Bomet County, Kenya</p>
+<br>
+<p>© 2026 Revival Junior Academy. All Rights Reserved.</p>
+</footer>
+
+<a href="https://wa.me/254791807559"
+target="_blank"
+class="whatsapp"
+aria-label="WhatsApp">
+☎
+</a>
+
+<script>
+function toggleMenu(){
+document.getElementById("nav").classList.toggle("active");
+}
+</script>
+
+</body>
+</html>
